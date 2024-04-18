@@ -10,8 +10,7 @@ WWW=		https://github.com/aandrew-me/tgpt
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		go
-#:modules
+USES=		go:1.21
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	aandrew-me
