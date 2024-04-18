@@ -35,7 +35,7 @@ RUN_DEPENDS=	adb:devel/android-tools \
 		pkgconf:devel/pkgconf \
 		usbmuxd:comms/usbmuxd \
 		webcamd:multimedia/webcamd
-USES=		gettext-runtime gmake pkgconfig:build
+USES=		gettext-runtime gmake pkgconfig:build desktop-file-utils
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 pango
 USE_XORG=	x11
 
@@ -46,7 +46,9 @@ NLS_USES=		gettext
 NLS_CONFIGURE_ENABLE=	nls
 
 PLIST_FILES=	bin/droidcam \
-		bin/droidcam-cli
+		bin/droidcam-cli \
+		share/applications/droidcam.desktop \
+		share/pixmaps/droidcam-icon.png
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dev47apps
@@ -57,9 +59,9 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/droidcam-cli \
 		${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/icon2.png \
-		${PREFIX}/share/pixmaps/droidcam-icon.png
+		${STAGEDIR}${PREFIX}/share/pixmaps/droidcam-icon.png
 	${INSTALL_DATA} ${WRKSRC}/droidcam.desktop \
-		${PREFIX}/share/applications
+		${STAGEDIR}${PREFIX}/share/applications
 
 deinstall:
 	pkg del -y droidcam
