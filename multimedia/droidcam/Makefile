@@ -32,10 +32,10 @@ LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 
 RUN_DEPENDS=	adb:devel/android-tools \
 		ffmpeg:multimedia/ffmpeg \
-		pkgconf:devel/pkgconf \
 		usbmuxd:comms/usbmuxd \
 		webcamd:multimedia/webcamd
-USES=		gettext-runtime gmake pkgconfig:build desktop-file-utils
+
+USES=		gettext-runtime gmake pkgconfig desktop-file-utils
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 pango
 USE_XORG=	x11
 
@@ -62,12 +62,5 @@ do-install:
 		${STAGEDIR}${PREFIX}/share/pixmaps/droidcam-icon.png
 	${INSTALL_DATA} ${WRKSRC}/droidcam.desktop \
 		${STAGEDIR}${PREFIX}/share/applications
-
-deinstall:
-	pkg del -y droidcam
-	${RM} ${PREFIX}/bin/droidcam
-	${RM} ${PREFIX}/bin/droidcam-cli
-	${RM} ${PREFIX}/share/pixmaps/droidcam-icon.png
-	${RM} ${PREFIX}/share/applications/droidcam.desktop
 
 .include <bsd.port.mk>
