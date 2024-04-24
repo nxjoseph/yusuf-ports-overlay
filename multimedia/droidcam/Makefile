@@ -10,6 +10,7 @@ WWW=		https://github.com/dev47apps/droidcam
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${PREFIX}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libasound.so:audio/alsa-lib \
 		libatk-1.0.so:accessibility/at-spi2-core \
@@ -28,14 +29,14 @@ LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libspeex.so:audio/speex \
 		libturbojpeg.so:graphics/libjpeg-turbo \
 		libusbmuxd-2.0.so:comms/libusbmuxd \
-		libX11.so:x11/libX11
+		libX11.so:x11/libX11 \
+		libswscale.so:multimedia/ffmpeg
 
 RUN_DEPENDS=	adb:devel/android-tools \
 		ffmpeg:multimedia/ffmpeg \
 		usbmuxd:comms/usbmuxd \
 		webcamd:multimedia/webcamd
-
-USES=		gettext-runtime gmake pkgconfig desktop-file-utils
+USES=		desktop-file-utils gettext-runtime gmake pkgconfig
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 pango
 USE_XORG=	x11
 
