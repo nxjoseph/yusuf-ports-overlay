@@ -10,7 +10,7 @@ WWW=		https://github.com/dev47apps/droidcam
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PREFIX}/include/linux/videodev2.h:multimedia/v4l_compat
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libasound.so:audio/alsa-lib \
 		libatk-1.0.so:accessibility/at-spi2-core \
