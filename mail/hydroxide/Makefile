@@ -11,9 +11,10 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go:modules
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	emersion
-GH_TUPLE=	ProtonMail:go-crypto:3aa5874ade95:protonmail_go_crypto/vendor/github.com/ProtonMail/go-crypto \
+GH_TUPLE=	ProtonMail:go-crypto:5aa5874ade95:protonmail_go_crypto/vendor/github.com/ProtonMail/go-crypto \
 		boltdb:bolt:v1.3.1:boltdb_bolt/vendor/github.com/boltdb/bolt \
 		cloudflare:circl:v1.3.3:cloudflare_circl/vendor/github.com/cloudflare/circl \
 		emersion:go-bcrypt:6e724a1baa63:emersion_go_bcrypt/vendor/github.com/emersion/go-bcrypt \
