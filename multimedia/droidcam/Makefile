@@ -45,7 +45,7 @@ USE_XORG=	x11
 PLIST_FILES=	bin/droidcam \
 		bin/droidcam-cli \
 		share/applications/droidcam.desktop \
-		share/ixmaps/droidcam-icon.png
+		share/pixmaps/droidcam-icon.png
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
