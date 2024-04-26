@@ -31,11 +31,11 @@ LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libturbojpeg.so:graphics/libjpeg-turbo \
 		libusbmuxd-2.0.so:comms/libusbmuxd \
 		libX11.so:x11/libX11
-
 RUN_DEPENDS=	adb:devel/android-tools \
 		ffmpeg:multimedia/ffmpeg \
 		usbmuxd:comms/usbmuxd \
 		webcamd:multimedia/webcamd
+
 USES=		desktop-file-utils gettext-runtime gmake gnome pkgconfig xorg
 USE_GITHUB=	yes
 GH_ACCOUNT=	dev47apps
