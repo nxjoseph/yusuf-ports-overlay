@@ -27,10 +27,10 @@ LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libpango-1.0.so:x11-toolkits/pango \
 		libpangocairo-1.0.so:x11-toolkits/pango \
 		libspeex.so:audio/speex \
-		libswscale.so:multimedia/ffmpeg \
 		libturbojpeg.so:graphics/libjpeg-turbo \
 		libusbmuxd-2.0.so:comms/libusbmuxd \
-		libX11.so:x11/libX11
+		libX11.so:x11/libX11 \
+		libswscale.so:multimedia/ffmpeg
 RUN_DEPENDS=	adb:devel/android-tools \
 		ffmpeg:multimedia/ffmpeg \
 		usbmuxd:comms/usbmuxd \
