@@ -10,7 +10,6 @@ WWW=		https://github.com/aandrew-me/ytDownloader
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	npm:www/npm-node20
 RUN_DEPENDS=	electron27:devel/electron27 \
 		ffmpeg:multimedia/ffmpeg \
 		yt-dlp:www/yt-dlp
