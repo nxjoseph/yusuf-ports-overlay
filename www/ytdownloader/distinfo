@@ -1,0 +1,7 @@
+TIMESTAMP = 1716926997
+SHA256 (aandrew-me-ytDownloader-v3.17.4_GH0.tar.gz) = 7e8fe16504a7f0790ebc71d2679cb68da38aaae5148dd993f0173ec1eee0705f
+SIZE (aandrew-me-ytDownloader-v3.17.4_GH0.tar.gz) = 340852
+SHA256 (/usr/ports/www/ytdownloader/files/ytdownloader) = 0f8b061986b788ce7353064563298af7360ee0cb2df0633bca6803506af01b2b
+SIZE (/usr/ports/www/ytdownloader/files/ytdownloader) = 61
+SHA256 (/usr/ports/www/ytdownloader/files/ytdownloader.desktop) = 8216a2e6322b5063c787c77b422be99dc4b312f7214f0a27d94e8d9c388e1753
+SIZE (/usr/ports/www/ytdownloader/files/ytdownloader.desktop) = 245
