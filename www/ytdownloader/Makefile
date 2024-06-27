@@ -1,6 +1,6 @@
 PORTNAME=	ytDownloader
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.17.4
+DISTVERSION=	3.18.1
 CATEGORIES=	www
 
 MAINTAINER=	nxjoseph@protonmail.com
@@ -10,7 +10,7 @@ WWW=		https://github.com/aandrew-me/ytDownloader
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	electron27:devel/electron27 \
+RUN_DEPENDS=	electron28:devel/electron28 \
 		ffmpeg:multimedia/ffmpeg \
 		yt-dlp:www/yt-dlp
 

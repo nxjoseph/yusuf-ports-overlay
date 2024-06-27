@@ -12,6 +12,7 @@ share/icons/ytDownloader.png
 %%DATADIR%%/assets/css/extra.css
 %%DATADIR%%/assets/css/index.css
 %%DATADIR%%/assets/fonts/JetBrainsMono-Regular.ttf
+%%DATADIR%%/assets/fonts/Ubuntu-Regular.ttf
 %%DATADIR%%/assets/images/close.png
 %%DATADIR%%/assets/images/icon.png
 %%DATADIR%%/assets/images/menu.png
@@ -47,11 +48,14 @@ share/icons/ytDownloader.png
 %%DATADIR%%/node_modules/7zip-bin/README.md
 %%DATADIR%%/node_modules/7zip-bin/index.d.ts
 %%DATADIR%%/node_modules/7zip-bin/index.js
+%%DATADIR%%/node_modules/7zip-bin/linux/.DS_Store
+%%DATADIR%%/node_modules/7zip-bin/linux/arm/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/arm64/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/ia32/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/x64/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/x64/build.sh
 %%DATADIR%%/node_modules/7zip-bin/linux/x64/do-build.sh
+%%DATADIR%%/node_modules/7zip-bin/mac/.DS_Store
 %%DATADIR%%/node_modules/7zip-bin/mac/arm64/7za
 %%DATADIR%%/node_modules/7zip-bin/mac/x64/7za
 %%DATADIR%%/node_modules/7zip-bin/package.json
@@ -6910,6 +6914,8 @@ share/icons/ytDownloader.png
 %%DATADIR%%/node_modules/yargs/yargs
 %%DATADIR%%/node_modules/yargs/yargs.mjs
 %%DATADIR%%/node_modules/yt-dlp-wrap-plus/LICENSE
+%%DATADIR%%/node_modules/yt-dlp-wrap-plus/README.md
+%%DATADIR%%/node_modules/yt-dlp-wrap-plus/dist/index.d.ts
 %%DATADIR%%/node_modules/yt-dlp-wrap-plus/dist/index.js
 %%DATADIR%%/node_modules/yt-dlp-wrap-plus/dist/index.js.map
 %%DATADIR%%/node_modules/yt-dlp-wrap-plus/package.json
@@ -6927,7 +6933,6 @@ share/icons/ytDownloader.png
 %%DATADIR%%/src/playlist_new.js
 %%DATADIR%%/src/preferences.js
 %%DATADIR%%/src/renderer.js
-%%DATADIR%%/src/renderer.js.orig
 %%DATADIR%%/src/translate_about.js
 %%DATADIR%%/src/translate_index.js
 %%DATADIR%%/src/translate_preferences.js
