@@ -48,14 +48,12 @@ share/icons/ytDownloader.png
 %%DATADIR%%/node_modules/7zip-bin/README.md
 %%DATADIR%%/node_modules/7zip-bin/index.d.ts
 %%DATADIR%%/node_modules/7zip-bin/index.js
-%%DATADIR%%/node_modules/7zip-bin/linux/.DS_Store
 %%DATADIR%%/node_modules/7zip-bin/linux/arm/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/arm64/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/ia32/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/x64/7za
 %%DATADIR%%/node_modules/7zip-bin/linux/x64/build.sh
 %%DATADIR%%/node_modules/7zip-bin/linux/x64/do-build.sh
-%%DATADIR%%/node_modules/7zip-bin/mac/.DS_Store
 %%DATADIR%%/node_modules/7zip-bin/mac/arm64/7za
 %%DATADIR%%/node_modules/7zip-bin/mac/x64/7za
 %%DATADIR%%/node_modules/7zip-bin/package.json
