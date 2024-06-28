@@ -37,11 +37,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/resources/icon.png \
 		${STAGEDIR}${PREFIX}/share/icons/${PORTNAME}.png
 
-post-install:
-	${LN} -sf ${PREFIX}/bin/python${PYTHON_DEFAULT} ${LOCALBASE}/bin/python3
-	${LN} -sf ${PREFIX}/bin/electron27 ${LOCALBASE}/bin/electron
-
-post-stage:
-	${RM} ${STAGEDIR}${PREFIX}/share/ytDownloader/node_modules/jake/bin/bash_completion.sh
-
 .include <bsd.port.mk>

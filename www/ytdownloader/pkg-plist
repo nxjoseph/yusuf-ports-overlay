@@ -2678,6 +2678,7 @@ share/icons/ytDownloader.png
 %%DATADIR%%/node_modules/isexe/windows.js
 %%DATADIR%%/node_modules/jake/Makefile
 %%DATADIR%%/node_modules/jake/README.md
+%%DATADIR%%/node_modules/jake/bin/bash_completion.sh
 %%DATADIR%%/node_modules/jake/bin/cli.js
 %%DATADIR%%/node_modules/jake/jakefile.js
 %%DATADIR%%/node_modules/jake/lib/api.js
