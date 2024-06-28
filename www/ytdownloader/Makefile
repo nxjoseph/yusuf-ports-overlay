@@ -37,4 +37,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/resources/icon.png \
 		${STAGEDIR}${PREFIX}/share/icons/${PORTNAME}.png
 
+post-stage:
+	${RM} ${STAGEDIR}${PREFIX}/share/ytDownloader/node_modules/jake/bin/bash_completion.sh
+
 .include <bsd.port.mk>
