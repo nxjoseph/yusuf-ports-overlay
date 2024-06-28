@@ -1,9 +1,7 @@
 [Desktop Entry]
 Name=ytDownloader
 Comment=Download videos from hundreds of sites
-Keywords=
 Exec=ytdownloader
-TryExec=
 Terminal=false
 Icon=/usr/local/share/icons/ytDownloader.png
 Type=Application
