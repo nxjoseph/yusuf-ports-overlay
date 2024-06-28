@@ -35,7 +35,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/ytdownloader.desktop ${STAGEDIR}${PREFIX}/share/applications
 	${CP} -r ${WRKSRC} ${STAGEDIR}${PREFIX}/share/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/resources/icon.png \
-		${STAGEDIR}${PREFIX}/share/icons/${PORTNAME}.png
+		${STAGEDIR}${PREFIX}/share/pixmaps/${PORTNAME}.png
 
 post-stage:
 	${RM} ${STAGEDIR}${PREFIX}/share/ytDownloader/node_modules/jake/bin/bash_completion.sh

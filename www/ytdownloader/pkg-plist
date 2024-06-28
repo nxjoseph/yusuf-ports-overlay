@@ -1,6 +1,6 @@
 bin/ytdownloader
 share/applications/ytdownloader.desktop
-share/icons/ytDownloader.png
+share/pixmaps/ytDownloader.png
 %%DATADIR%%/.github/ISSUE_TEMPLATE/bug_report.md
 %%DATADIR%%/.github/ISSUE_TEMPLATE/feature_request.md
 %%DATADIR%%/.github/workflows/main.yml
