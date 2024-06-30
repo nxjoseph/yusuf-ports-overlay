@@ -14,9 +14,6 @@ USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	emersion
-
-GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
-GO_TARGET=	./cmd/hydroxide
 GH_TUPLE=	ProtonMail:go-crypto:v1.0.0:protonmail_go_crypto/vendor/github.com/ProtonMail/go-crypto \
 		boltdb:bolt:v1.3.1:boltdb_bolt/vendor/github.com/boltdb/bolt \
 		cloudflare:circl:v1.3.7:cloudflare_circl/vendor/github.com/cloudflare/circl \
@@ -32,6 +29,9 @@ GH_TUPLE=	ProtonMail:go-crypto:v1.0.0:protonmail_go_crypto/vendor/github.com/Pro
 		golang:sys:v0.19.0:golang_sys/vendor/golang.org/x/sys \
 		golang:term:v0.19.0:golang_term/vendor/golang.org/x/term \
 		golang:text:v0.14.0:golang_text/vendor/golang.org/x/text
+
+GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
+GO_TARGET=	./cmd/hydroxide
 
 PLIST_FILES=	bin/hydroxide
 
