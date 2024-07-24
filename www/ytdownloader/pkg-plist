@@ -77,7 +77,6 @@ bin/ytdownloader
 %%DATADIR%%/resources/app/assets/images/menu.png
 %%DATADIR%%/resources/app/assets/images/thumb.png
 %%DATADIR%%/resources/app/assets/images/up-arrow.png
-%%DATADIR%%/resources/app/ffmpeg
 %%DATADIR%%/resources/app/html/about.html
 %%DATADIR%%/resources/app/html/index.html
 %%DATADIR%%/resources/app/html/playlist.html

@@ -1,8 +1,8 @@
 PORTNAME=	YTDownloader
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.18.1
+DISTVERSION=	3.18.1_1
 CATEGORIES=	www
-MASTER_SITES=	https://github.com/aandrew-me/ytDownloader/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:0 \
+MASTER_SITES=	https://github.com/nxjosephofficial/ytDownloader/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:0 \
 		https://raw.githubusercontent.com/aandrew-me/ytDownloader/main/:1 \
 		https://raw.githubusercontent.com/aandrew-me/ytDownloader/main/resources/:2
 DISTNAME=	${PORTNAME}_Linux_x86_64
@@ -19,6 +19,7 @@ WWW=		https://github.com/aandrew-me/ytDownloader
 LICENSE=	GPLv3
 LICENSE_DISTFILES_GPLV3=	LICENSE
 
+ONLY_FOR_ARCHS=	amd64
 LIB_DEPENDS=	libatk-1.0.so:accessibility/at-spi2-core \
 		libatk-bridge-2.0.so:accessibility/at-spi2-core \
 		libatspi.so:accessibility/at-spi2-core \
