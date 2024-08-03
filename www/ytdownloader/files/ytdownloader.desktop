@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=YTDownloader
+Comment=Download videos from hundreds of sites
+Exec=ytdownloader
+Terminal=false
+Icon=/usr/local/share/pixmaps/YTDownloader.png
+Type=Application
+StartupNotify=false
+Categories=Network;Utilities;
