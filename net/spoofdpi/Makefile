@@ -1,4 +1,4 @@
-PORTNAME=	SpoofDPI
+PORTNAME=	spoofdpi
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.10.4
 CATEGORIES=	net
@@ -9,10 +9,11 @@ WWW=		https://github.com/xvzc/SpoofDPI
 
 LICENSE=	APACHE20
 
-USES=		go:1.21,modules
+USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	xvzc
+GH_PROJECT=	SpoofDPI
 GH_TUPLE=	atomicgo:cursor:v0.2.0:atomicgo_cursor/vendor/atomicgo.dev/cursor \
 		atomicgo:keyboard:v0.2.9:atomicgo_keyboard/vendor/atomicgo.dev/keyboard \
 		atomicgo:schedule:v0.1.0:atomicgo_schedule/vendor/atomicgo.dev/schedule \
@@ -34,10 +35,15 @@ GH_TUPLE=	atomicgo:cursor:v0.2.0:atomicgo_cursor/vendor/atomicgo.dev/cursor \
 		rivo:uniseg:v0.4.4:rivo_uniseg/vendor/github.com/rivo/uniseg \
 		sirupsen:logrus:v1.9.3:sirupsen_logrus/vendor/github.com/sirupsen/logrus \
 		xo:terminfo:abceb7e1c41e:xo_terminfo/vendor/github.com/xo/terminfo
+USE_RC_SUBR=	${PORTNAME}
 
-GO_TARGET=	./cmd/spoof-dpi
-GO_BUILDFLAGS=	-ldflags="-s -w" -o ./build/spoof-dpi
+GO_TARGET=	./cmd/spoof-dpi:${PORTNAME}
+GO_BUILDFLAGS=	-ldflags="-s -w"
 
-PLIST_FILES=	bin/spoof-dpi
+SUB_LIST=	USER=${USERS}
+USERS=		${PORTNAME}
+GROUPS=		${PORTNAME}
+
+PLIST_FILES=	bin/${PORTNAME}
 
 .include <bsd.port.mk>
