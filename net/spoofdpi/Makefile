@@ -1,6 +1,6 @@
 PORTNAME=	spoofdpi
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.10.4
+DISTVERSION=	0.10.6
 CATEGORIES=	net
 
 MAINTAINER=	nxjoseph@protonmail.com
@@ -10,7 +10,6 @@ WWW=		https://github.com/xvzc/SpoofDPI
 LICENSE=	APACHE20
 
 USES=		go:modules
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	xvzc
 GH_PROJECT=	SpoofDPI
@@ -35,11 +34,10 @@ GH_TUPLE=	atomicgo:cursor:v0.2.0:atomicgo_cursor/vendor/atomicgo.dev/cursor \
 		rivo:uniseg:v0.4.4:rivo_uniseg/vendor/github.com/rivo/uniseg \
 		sirupsen:logrus:v1.9.3:sirupsen_logrus/vendor/github.com/sirupsen/logrus \
 		xo:terminfo:abceb7e1c41e:xo_terminfo/vendor/github.com/xo/terminfo
-USE_RC_SUBR=	${PORTNAME}
 
+USE_RC_SUBR=	${PORTNAME}
 GO_TARGET=	./cmd/spoof-dpi:${PORTNAME}
 GO_BUILDFLAGS=	-ldflags="-s -w"
-
 SUB_LIST=	USER=${USERS}
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}
