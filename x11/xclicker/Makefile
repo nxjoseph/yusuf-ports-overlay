@@ -10,10 +10,10 @@ WWW=		https://github.com/robiot/xclicker
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		meson pkgconfig motif xorg gnome desktop-file-utils
+USES=		desktop-file-utils gnome meson motif pkgconfig xorg
 USE_GITHUB=	yes
 GH_ACCOUNT=	robiot
-USE_GNOME+=	gtk30 gdkpixbuf2 glib20
+USE_GNOME+=	gdkpixbuf2 glib20 gtk30
 USE_XORG+=	x11 xi xtst
 
 PLIST_FILES=	bin/xclicker \
