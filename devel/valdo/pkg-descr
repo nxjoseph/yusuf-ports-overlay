@@ -1,0 +1,3 @@
+Valdo is a tool for creating new Vala projects from templates.
+It simplifies project initialization with commands
+like valdo new, valdo gtk, and valdo lib.
