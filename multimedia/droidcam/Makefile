@@ -1,12 +1,12 @@
 PORTNAME=	droidcam
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	nxjoseph@protonmail.com
 COMMENT=	GNU/Linux/nix client for DroidCam
-WWW=		https://github.com/dev47apps/droidcam
+WWW=		https://github.com/dev47apps/droidcam-linux-client
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
@@ -40,6 +40,7 @@ RUN_DEPENDS=	adb:devel/android-tools \
 USES=		desktop-file-utils gettext-runtime gmake gnome pkgconfig xorg
 USE_GITHUB=	yes
 GH_ACCOUNT=	dev47apps
+GH_PROJECT=	droidcam-linux-client
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 pango
 USE_XORG=	x11
 
