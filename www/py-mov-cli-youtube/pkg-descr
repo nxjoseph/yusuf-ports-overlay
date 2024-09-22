@@ -1,0 +1,4 @@
+mov-cli-youtube is a plugin for the mov-cli tool that enables users
+to watch YouTube videos directly from the command line. It supports
+various features such as searching for videos, downloading audio only
+and even accessing YouTube Shorts.
