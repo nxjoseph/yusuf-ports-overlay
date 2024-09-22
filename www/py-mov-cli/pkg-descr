@@ -1,0 +1,3 @@
+mov-cli is a command-line tool that allows you to stream media
+from your terminalusing plugins. It handles metadata, configuration
+and scraping of media to be streamed in your preferred media player.
