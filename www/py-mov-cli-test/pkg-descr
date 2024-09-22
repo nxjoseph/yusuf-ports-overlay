@@ -1,0 +1,4 @@
+mov-cli-test provides a testing framework for the mov-cli, a command-line
+interface tool for managing and manipulating video files. This includes
+various test cases and examples to ensure the functionality
+and reliability of the mov-cli tool.
