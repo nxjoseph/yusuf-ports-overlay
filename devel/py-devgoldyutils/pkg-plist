@@ -1,0 +1,5 @@
+%%PYTHON_SITELIBDIR%%/devgoldyutils/__init__.py
+%%PYTHON_SITELIBDIR%%/devgoldyutils/colours.py
+%%PYTHON_SITELIBDIR%%/devgoldyutils/debugging.py
+%%PYTHON_SITELIBDIR%%/devgoldyutils/logging.py
+%%PYTHON_SITELIBDIR%%/devgoldyutils/strings.py
