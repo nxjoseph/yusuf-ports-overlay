@@ -1,0 +1,3 @@
+%%PYTHON_SITELIBDIR%%/mov_cli_files/__init__.py
+%%PYTHON_SITELIBDIR%%/mov_cli_files/paths.py
+%%PYTHON_SITELIBDIR%%/mov_cli_files/scraper.py

@@ -1,0 +1,5 @@
+mov-cli-files is a plugin for the mov-cli version 4, designed to
+facilitate the playback of music and videos stored on a user's device.
+It allows users to search for and play media files using specific
+commands in the terminal. Users can also specify search paths
+and retrieve all files with wildcard queries.
