@@ -1,0 +1,4 @@
+py-plexapi provides unofficial Python bindings for the Plex API, aiming
+to replicate the capabilities of the official Plex Web Client. It allows
+users to navigate and manage local or remote Plex libraries, control media
+playback on connected devices, and listen for server notifications.
