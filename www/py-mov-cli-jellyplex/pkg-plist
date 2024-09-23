@@ -1,0 +1,3 @@
+%%PYTHON_SITELIBDIR%%/mov_cli_jellyplex/__init__.py
+%%PYTHON_SITELIBDIR%%/mov_cli_jellyplex/jellyfin/scraper.py
+%%PYTHON_SITELIBDIR%%/mov_cli_jellyplex/plex/scraper.py
