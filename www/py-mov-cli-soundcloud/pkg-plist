@@ -1,0 +1,2 @@
+%%PYTHON_SITELIBDIR%%/mov_cli_soundcloud/__init__.py
+%%PYTHON_SITELIBDIR%%/mov_cli_soundcloud/scraper.py

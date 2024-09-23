@@ -1,0 +1,6 @@
+mov-cli-soundcloud is a plugin for mov-cli version 4 that allows users to stream
+music from SoundCloud directly through the command line. It enables users
+to search for tracks, playlists, and user profiles on SoundCloud. Once
+configured, users can play their desired audio content using specific
+commands in the terminal, enhancing the mov-cli experience with access
+to SoundCloud's extensive music library.
