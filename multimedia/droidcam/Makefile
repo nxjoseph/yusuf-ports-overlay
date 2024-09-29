@@ -28,11 +28,11 @@ LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libpango-1.0.so:x11-toolkits/pango \
 		libpangocairo-1.0.so:x11-toolkits/pango \
 		libspeex.so:audio/speex \
+		libswscale.so:multimedia/ffmpeg \
 		libturbojpeg.so:graphics/libjpeg-turbo \
 		libusbmuxd-2.0.so:comms/libusbmuxd \
 		libwayland-client.so:graphics/wayland \
-		libX11.so:x11/libX11 \
-		libswscale.so:multimedia/ffmpeg
+		libX11.so:x11/libX11
 RUN_DEPENDS=	adb:devel/android-tools \
 		ffmpeg:multimedia/ffmpeg \
 		usbmuxd:comms/usbmuxd \
@@ -58,8 +58,10 @@ NLS_CONFIGURE_ENABLE=	nls
 
 pre-configure:
 	${REINPLACE_CMD} -e 's,/opt/${PORTNAME}-icon.png,${PREFIX}/share/pixmaps/${PORTNAME}-icon.png,' \
-		${WRKSRC}/src/${PORTNAME}.c ${WRKSRC}/${PORTNAME}.desktop
-	${REINPLACE_CMD} -e 's,/usr/local/bin/${PORTNAME},${PREFIX}/bin/${PORTNAME},' \
+		${WRKSRC}/src/${PORTNAME}.c \
+		${WRKSRC}/${PORTNAME}.desktop
+	${REINPLACE_CMD} -e 's,Exec=/usr/local/bin/${PORTNAME},${PREFIX}/bin/${PORTNAME},' \
+		-e 's,TryExec=/usr/local/bin/${PORTNAME},${PREFIX}/bin/${PORTNAME},' \
 		${WRKSRC}/${PORTNAME}.desktop
 
 do-install:
