@@ -1,0 +1,11 @@
+TIMESTAMP = 1727608566
+SHA256 (r3tr0ananas-wallhaven-cli-v1.0.6_GH0.tar.gz) = b16aa41985789f755c4d795a2c7bedeb5ce62ba0be3a496e00063f7a229f7968
+SIZE (r3tr0ananas-wallhaven-cli-v1.0.6_GH0.tar.gz) = 7122
+SHA256 (BurntSushi-toml-v1.4.0_GH0.tar.gz) = cdd8db31810121897420a0875f3826a2ac986544b9db4918c4a21921bab047dc
+SIZE (BurntSushi-toml-v1.4.0_GH0.tar.gz) = 117752
+SHA256 (inconshreveable-mousetrap-v1.1.0_GH0.tar.gz) = ab23e7c5cbf42564eb0190ee051b7217c04fd2599d2f26e9ebe205db75963141
+SIZE (inconshreveable-mousetrap-v1.1.0_GH0.tar.gz) = 5338
+SHA256 (spf13-cobra-v1.8.1_GH0.tar.gz) = 5d45f6fcce63f9f4dd12b34a15669335a35ca3f7bf297ba465c3fbf62308e5fe
+SIZE (spf13-cobra-v1.8.1_GH0.tar.gz) = 192358
+SHA256 (spf13-pflag-v1.0.5_GH0.tar.gz) = 9a2cae1f8e8ab0d2cc8ebe468e871af28d9ac0962cf0520999e3ba85f0c7b808
+SIZE (spf13-pflag-v1.0.5_GH0.tar.gz) = 50796
