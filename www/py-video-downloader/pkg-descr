@@ -1,0 +1,6 @@
+video-downloader by Unrud allows users to download videos from various
+websites, including YouTube, with a simple interface. Key features
+include the ability to convert videos to MP3, support for
+password-protected content, and downloading entire playlists.
+It automatically selects video formats based on user-defined
+quality preferences and is built on the yt-dlp framework.
