@@ -1,0 +1,4 @@
+macchina is a customizable and minimal system information frontend compatible
+with multiple operating systems, including Linux, macOS, FreeBSD and Windows.
+It provides users with essential system metrics like
+kernel version, memory usage, and processor load.
