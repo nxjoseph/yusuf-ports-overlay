@@ -1,6 +1,6 @@
 PORTNAME=	wallhaven-cli
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.6
+DISTVERSION=	2.0.3
 CATEGORIES=	graphics
 
 MAINTAINER=	nxjoseph@protonmail.com
