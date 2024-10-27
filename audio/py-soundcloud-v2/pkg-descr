@@ -1,0 +1,6 @@
+py-soundcloud-v2 is a Python wrapper for SoundCloud's internal v2 API, allowing
+developers to access read-only methods without requiring an API key.
+This library facilitates interactions with SoundCloud data,
+making it easier to integrate SoundCloud features into projects.
+Note that it is not the official SoundCloud API, and the service
+is currently not accepting new application registrations.
