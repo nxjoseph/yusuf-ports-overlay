@@ -1,0 +1,5 @@
+syncedlyrics is a Python tool that retrieves synchronized lyrics in LRC format
+for music tracks. It offers a command-line interface to search for lyrics, with
+options to filter by plain or synced formats and specify providers.
+This utility enhances the music experience by providing time-synced
+lyrics for karaoke or personal use.

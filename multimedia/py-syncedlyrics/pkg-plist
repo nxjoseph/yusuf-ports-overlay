@@ -1,0 +1,15 @@
+bin/syncedlyrics
+%%PYTHON_SITELIBDIR%%/syncedlyrics/__init__.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/__main__.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/cli.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/__init__.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/base.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/deezer.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/genius.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/lrclib.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/lyricsify.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/megalobiz.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/musixmatch.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/netease.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/providers/spotify.py
+%%PYTHON_SITELIBDIR%%/syncedlyrics/utils.py
