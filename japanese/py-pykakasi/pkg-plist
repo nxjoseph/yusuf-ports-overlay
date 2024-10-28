@@ -1,0 +1,10 @@
+%%PYTHON_SITELIBDIR%%/pykakasi/data/halfkana3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/hepburndict3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/hepburnhira3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/itaijidict4.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/kanwadict4.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/kunreidict3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/kunreihira3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/passportdict3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/data/passporthira3.db
+%%PYTHON_SITELIBDIR%%/pykakasi/kakasidict.py

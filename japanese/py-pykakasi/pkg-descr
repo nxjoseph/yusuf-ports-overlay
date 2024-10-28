@@ -1,0 +1,5 @@
+pykakasi is a Python library that facilitates the conversion of Japanese text
+from kanji to hiragana or katakana. It is designed for applications requiring
+Japanese language processing, providing a straightforward interface for text
+manipulation. This tool is lightweight and enhances accessibility for users
+dealing with Japanese scripts.
