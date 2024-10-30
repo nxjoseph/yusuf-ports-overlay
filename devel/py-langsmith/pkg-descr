@@ -1,0 +1,6 @@
+langsmith provides a Python client for the LangSmith LLM Tracing and Evaluation
+Platform, enabling developers to log, debug, and evaluate language model
+applications. It integrates seamlessly with LangChain and supports creating
+datasets from existing runs, making it ideal for enhancing AI model performance.
+Suitable for teams aiming to streamline their LLM workflows, it simplifies the
+process of tracing and evaluating intelligent agents.
