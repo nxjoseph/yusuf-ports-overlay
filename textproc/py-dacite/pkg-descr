@@ -1,0 +1,3 @@
+dacite is a Python library that simplifies the creation
+of data classes (PEP 557) from dictionaries, allowing
+for easy conversion of raw data into structured types.
