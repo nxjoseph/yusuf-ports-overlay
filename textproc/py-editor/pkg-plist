@@ -1,0 +1,2 @@
+%%PYTHON_SITELIBDIR%%/editor/__init__.py
+%%PYTHON_SITELIBDIR%%/editor/py.typed

@@ -1,0 +1,4 @@
+py-editor package provides a simple interface to open
+and edit text files using the user's preferred text editor.
+It supports editing existing files, creating new ones, or
+using temporary files, blocking until the editing session is complete.
