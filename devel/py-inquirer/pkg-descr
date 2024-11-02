@@ -1,0 +1,4 @@
+py-inquirer package provides a collection of interactive command line user
+interfaces, inspired by Inquirer.js. It simplifies the process of asking
+questions, validating answers, and managing hierarchical prompts, making it
+easy to create engaging command line applications.
