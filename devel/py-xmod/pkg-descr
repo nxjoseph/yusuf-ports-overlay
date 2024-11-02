@@ -1,0 +1,3 @@
+py-xmod library allows Python modules to behave like
+callable objects or indexable collections enhancing
+their functionality without the need for classes.
