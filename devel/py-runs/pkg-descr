@@ -1,0 +1,3 @@
+py-runs package simplifies the execution of multiple
+shell commands as a block of text, providing a 
+user-friendly interface for subprocess management.
