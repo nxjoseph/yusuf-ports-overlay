@@ -1,0 +1,4 @@
+html2rss is a shell script designed to facilitate the conversion of
+HTML web pages into RSS feeds. This tool is particularly useful for
+users who want to keep track of updates on specific web pages that
+do not provide an RSS feed natively.
