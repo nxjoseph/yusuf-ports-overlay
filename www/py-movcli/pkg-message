@@ -1,0 +1,9 @@
+[
+{ type: install
+  message: <<EOM
+By default, movcli uses mpv video player in order
+to play content. To change this to your preferred
+player, edit ".config/mov-cli/config.toml" file.
+EOM
+}
+]
