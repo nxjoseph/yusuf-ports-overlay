@@ -17,11 +17,14 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xattr>=0:devel/py-xattr@${PY_FLAVOR} \
 USES=		gettext gnome meson python:3.8+
 USE_GITHUB=	yes
 GH_ACCOUNT=	Unrud
+USE_GNOME=	gtk-update-icon-cache librsvg2
 
 NO_ARCH=	yes
 
-pre-configure:
+post-patch:
 	@${REINPLACE_CMD} -e 's|python3|python${PYTHON_VER}|g' \
+		-e '/update_desktop_database/d' \
+		-e '/gtk_update_icon_cache/d' \
 		${WRKSRC}/meson.build
 
 .include <bsd.port.mk>
