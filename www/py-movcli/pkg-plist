@@ -1,3 +1,5 @@
+bin/mov-cli
+bin/mov-cli-dev
 %%PYTHON_SITELIBDIR%%/mov_cli/__init__.py
 %%PYTHON_SITELIBDIR%%/mov_cli/cache.py
 %%PYTHON_SITELIBDIR%%/mov_cli/cli/__init__.py
@@ -45,7 +47,6 @@
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/scraper/__init__.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/scraper/the_movie_db.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/__init__.py
-%%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/iso.md
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/iso_639.json
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/lang.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/version.py
