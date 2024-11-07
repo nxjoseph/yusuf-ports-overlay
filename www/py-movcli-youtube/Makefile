@@ -1,7 +1,10 @@
-PORTNAME=	mov-cli-youtube
-DISTVERSION=	1.3.4
+PORTNAME=	movcli
+DISTVERSION=	1.3.5
 CATEGORIES=	www python
+MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+PKGNAMESUFFIX=	-youtube
+DISTNAME=	mov_cli_youtube-${DISTVERSION}
 
 MAINTAINER=	nxjoseph@protonmail.com
 COMMENT=	Mov-cli v4 plugin for watching youtube
@@ -16,8 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}importlib-metadata>=0:devel/py-importlib-met
 		${PYTHON_PKGNAMEPREFIX}yt-dlp>=0:www/py-yt-dlp@${PY_FLAVOR}
 
 USES=		python:3.8+
-USE_GITHUB=	yes
-GH_ACCOUNT=	mov-cli
+USE_PYTHON=	flavors
 
 NO_ARCH=	yes
 NO_BUILD=	yes
