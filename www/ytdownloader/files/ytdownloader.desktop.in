@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=YTDownloader
-Comment=Download videos from hundreds of sites
+Name=%%PORTNAME%%
+Comment=%%COMMENT%%
 Exec=ytdownloader
 Terminal=false
-Icon=/usr/local/share/pixmaps/YTDownloader.png
+Icon=%%PREFIX%%/share/pixmaps/%%PORTNAME%%.png
 Type=Application
 StartupNotify=false
 Categories=Network;Utilities;
