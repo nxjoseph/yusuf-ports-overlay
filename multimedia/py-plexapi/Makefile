@@ -14,7 +14,7 @@ USES=		python:3.8+
 USE_GITHUB=	yes
 GH_ACCOUNT=	pkkid
 GH_PROJECT=	python-plexapi
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils flavors
 
 NO_ARCH=	yes
 NO_BUILD=	yes
