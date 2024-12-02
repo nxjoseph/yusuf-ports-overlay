@@ -1,0 +1,3 @@
+The torrequest package provides a simple interface for making HTTP(S) requests
+over the Tor network, ensuring user anonymity. It integrates easily with
+existing Python applications and is compatible with standard HTTP libraries.
