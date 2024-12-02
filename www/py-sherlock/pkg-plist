@@ -1,0 +1,9 @@
+bin/sherlock
+%%PYTHON_SITELIBDIR%%/sherlock_project/__init__.py
+%%PYTHON_SITELIBDIR%%/sherlock_project/__main__.py
+%%PYTHON_SITELIBDIR%%/sherlock_project/notify.py
+%%PYTHON_SITELIBDIR%%/sherlock_project/resources/data.json
+%%PYTHON_SITELIBDIR%%/sherlock_project/resources/data.schema.json
+%%PYTHON_SITELIBDIR%%/sherlock_project/result.py
+%%PYTHON_SITELIBDIR%%/sherlock_project/sherlock.py
+%%PYTHON_SITELIBDIR%%/sherlock_project/sites.py
