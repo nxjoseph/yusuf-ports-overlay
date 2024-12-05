@@ -1,0 +1,6 @@
+Drogon is a high-performance, cross-platform C++17/20 HTTP application framework
+designed for building web applications. It features asynchronous programming,
+non-blocking I/O, and supports both HTTP/1.0 and HTTP/1.1 protocols.
+With built-in support for RESTful APIs, WebSockets, and various databases,
+Drogon simplifies the development of scalable web services on FreeBSD and
+other platforms.
