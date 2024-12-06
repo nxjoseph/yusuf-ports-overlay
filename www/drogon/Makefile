@@ -23,22 +23,30 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	drogonframework
 GH_TUPLE=	an-tao:trantor:8bf280ba:trantor/trantor
 
-OPTIONS_DEFAULT=	PGSQL
+OPTIONS_DEFAULT=	PGSQL16
 
 OPTIONS_SINGLE=		BACKEND
-OPTIONS_SINGLE_BACKEND=	PGSQL SQLITE3
+OPTIONS_SINGLE_BACKEND=	MYSQL80 PGSQL16 SQLITE3
 
-PGSQL_DESC=	Use PostgreSQL as backend
+MYSQL80_DESC=	Use MySQL80 as backend
+PGSQL16_DESC=	Use PostgreSQL16 as backend
 SQLITE3_DESC=	Use SQLite3 as backend
 
 .include <bsd.port.mk>
 .include <bsd.port.options.mk>
 
-.if empty(PORT_OPTIONS:MSQLITE3) && !empty(PORT_OPTIONS:MPGSQL)
+.if empty(PORT_OPTIONS:MSQLITE3) && empty(PORT_OPTIONS:MMYSQL80) && \
+	!empty(PORT_OPTIONS:MPGSQL16)
 USES+=		pgsql
 LIB_DEPENDS+=	libpq.so:databases/postgresql16-client
 .endif
-.if empty(PORT_OPTIONS:MPGSQL) && !empty(PORT_OPTIONS:MSQLITE3)
+.if empty(PORT_OPTIONS:MPGSQL16) && empty(PORT_OPTIONS:MMYSQL80) && \
+	!empty(PORT_OPTIONS:MSQLITE3)
 USES+=		sqlite
 LIB_DEPENDS+=	libsqlite3.so:databases/sqlite3
+.endif
+.if empty(PORT_OPTIONS:MSQLITE3) && empty(PORT_OPTIONS:MPGSQL16) && \
+	!empty(PORT_OPTIONS:MMYSQL80)
+USES+=		mysql
+LIB_DEPENDS+=	libmysqlclient.so:databases/mysql80-client
 .endif
