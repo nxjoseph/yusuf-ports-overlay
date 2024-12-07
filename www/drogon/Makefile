@@ -17,100 +17,63 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	drogonframework
 GH_TUPLE=	an-tao:trantor:8bf280ba:trantor/trantor
 
-OPTIONS_DEFAULT=	PGSQL16
+OPTIONS_DEFAULT=	PGSQL
 
 OPTIONS_MULTI=		SUPPORT
 OPTIONS_MULTI_SUPPORT=	BROTLI CTL DOCS EXAMPLES REDIS SPDLOG YAML
 
 OPTIONS_SINGLE=		BACKEND
-OPTIONS_SINGLE_BACKEND=	MYSQL80 PGSQL16 SQLITE3
+OPTIONS_SINGLE_BACKEND=	MYSQL PGSQL SQLITE
 
 BROTLI_DESC=	Build Brotli
 CTL_DESC=	Build drogon_ctl
 DOCS_DESC=	Build Doxygen documentation
 EXAMPLES_DESC=	Build examples
-MYSQL80_DESC=	Use MySQL80 as backend
-PGSQL16_DESC=	Use PostgreSQL16 as backend
+MYSQL_DESC=	Use MySQL as backend
+PGSQL_DESC=	Use PostgreSQL as backend
 REDIS_DESC=	Build with redis support
 SPDLOG_DESC=	Allow using the spdlog logging library
-SQLITE3_DESC=	Use SQLite3 as backend
+SQLITE_DESC=	Use SQLite as backend
 YAML_DESC=	Build yaml config
 
-.include <bsd.port.mk>
+BROTLI_BUILD_DEPENDS+=	brotli:archivers/brotli
+BROTLI_LIB_DEPENDS+=	libbrotlicommon.so:archivers/brotli \
+			libbrotlidec.so:archivers/brotli \
+			libbrotlienc.so:archivers/brotli
+BROTLI_CMAKE_ON+=	-DBUILD_BROTLI=ON
+
+CTL_CMAKE_ON+=	-DBUILD_CTL=ON
+
+DOCS_BUILD_DEPENDS+=	doxygen:devel/doxygen
+DOCS_CMAKE_ON+=		-DBUILD_DOC=ON
+
+EXAMPLES_CMAKE_ON+=	-DBUILD_EXAMPLES=ON
+
+MYSQL_USES+=		mysql
+MYSQL_CMAKE_OFF+=	-DBUILD_ORM=OFF \
+			-DBUILD_POSTGRESQL=OFF \
+			-DBUILD_SQLITE=OFF
+
+PGSQL_USES+=		pgsql
+PGSQL_CMAKE_OFF+=	-DBUILD_MYSQL=OFF \
+			-DBUILD_ORM=OFF \
+			-DBUILD_SQLITE=OFF
+
+REDIS_LIB_DEPENDS+=	libhiredis.so:databases/hiredis
+REDIS_CMAKE_ON+=	-DBUILD_REDIS=ON
+REDIS_CMAKE_OFF+=	-DBUILD_ORM=OFF
+
+SPDLOG_LIB_DEPENDS+=	libfmt.so:devel/libfmt \
+			libspdlog.so:devel/spdlog
+SPDLOG_CMAKE_ON+=	-DUSE_SPDLOG=ON
+
+SQLITE_USES+=		sqlite
+SQLITE_CMAKE_OFF+=	-DBUILD_MYSQL=OFF \
+			-DBUILD_ORM=OFF \
+			-DBUILD_POSTGRESQL=OFF
+
+YAML_LIB_DEPENDS+=	libyaml-cpp.so:devel/yaml-cpp
+YAML_CMAKE_ON+=		-DBUILD_YAML_CONFIG=ON
+
 .include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MBROTLI}
-CMAKE_ARGS+=	-DBUILD_BROTLI=ON
-BUILD_DEPENDS+=	brotli:archivers/brotli
-LIB_DEPENDS+=	libbrotlicommon.so:archivers/brotli \
-		libbrotlidec.so:archivers/brotli
-.else
-CMAKE_ARGS+=	-DBUILD_BROTLI=OFF
-.endif
-
-.if ${PORT_OPTIONS:MCTL}
-CMAKE_ARGS+=	-DBUILD_CTL=ON
-.else
-CMAKE_ARGS+=	-DBUILD_CTL=OFF
-.endif
-
-.if ${PORT_OPTIONS:MDOCS}
-CMAKE_ARGS+=	-DBUILD_DOC=ON
-BUILD_DEPENDS+=	doxygen:devel/doxygen
-.else
-CMAKE_ARGS+=	-DBUILD_DOC=OFF
-.endif
-
-.if ${PORT_OPTIONS:MEXAMPLES}
-CMAKE_ARGS+=	-DBUILD_EXAMPLES=ON
-.else
-CMAKE_ARGS+=	-DBUILD_EXAMPLES=OFF
-.endif
-
-.if ${PORT_OPTIONS:MREDIS}
-CMAKE_ARGS+=	-DBUILD_ORM=OFF \
-		-DBUILD_REDIS=ON
-LIB_DEPENDS+=	libhiredis.so:databases/hiredis
-.else
-CMAKE_ARGS+=	-DBUILD_REDIS=OFF
-.endif
-
-.if ${PORT_OPTIONS:MSPDLOG}
-CMAKE_ARGS+=	-DBUILD_SPDLOG=ON
-LIB_DEPENDS+=	libspdlog.so:devel/spdlog
-.else
-CMAKE_ARGS+=	-DBUILD_SPDLOG=OFF \
-		-DUSE_SUBMODULE=OFF
-.endif
-
-.if ${PORT_OPTIONS:MYAML}
-CMAKE_ARGS+=	-DBUILD_YAML_CONFIG=ON
-LIB_DEPENDS+=	libyaml-cpp.so:devel/yaml-cpp
-.else
-CMAKE_ARGS+=	-DBUILD_YAML_CONFIG=OFF
-.endif
-
-.if empty(PORT_OPTIONS:MSQLITE3) && empty(PORT_OPTIONS:MMYSQL80) && \
-	!empty(PORT_OPTIONS:MPGSQL16)
-USES+=		pgsql
-LIB_DEPENDS+=	libpq.so:databases/postgresql16-client
-CMAKE_ARGS+=	-DBUILD_MYSQL=OFF \
-		-DBUILD_ORM=OFF \
-		-DBUILD_SQLITE=OFF
-.endif
-.if empty(PORT_OPTIONS:MPGSQL16) && empty(PORT_OPTIONS:MMYSQL80) && \
-	!empty(PORT_OPTIONS:MSQLITE3)
-USES+=		sqlite
-LIB_DEPENDS+=	libsqlite3.so:databases/sqlite3
-CMAKE_ARGS+=	-DBUILD_MYSQL=OFF \
-		-DBUILD_ORM=OFF \
-		-DBUILD_POSTGRESQL=OFF
-.endif
-.if empty(PORT_OPTIONS:MSQLITE3) && empty(PORT_OPTIONS:MPGSQL16) && \
-	!empty(PORT_OPTIONS:MMYSQL80)
-USES+=		mysql
-LIB_DEPENDS+=	libmysqlclient.so:databases/mysql80-client
-CMAKE_ARGS+=	-DBUILD_ORM=OFF \
-		-DBUILD_POSTGRESQL=OFF \
-		-DBUILD_SQLITE=OFF
-.endif
+.include <bsd.port.mk>
