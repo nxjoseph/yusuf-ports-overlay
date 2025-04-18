@@ -1,0 +1,4 @@
+PyDes is a Python implementation of the DES encryption algorithm.
+It provides a simple and easy-to-use interface for encrypting
+and decrypting data using the DES, Triple DES, and
+other related encryption modes.

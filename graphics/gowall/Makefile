@@ -1,10 +1,10 @@
 PORTNAME=	gowall
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.9
+DISTVERSION=	0.2.1
 CATEGORIES=	graphics
 
 MAINTAINER=	nxjoseph@protonmail.com
-COMMENT=	Tool to convert a Wallpaper's color scheme and palette
+COMMENT=	Versatile tool to process images
 WWW=		https://github.com/Achno/gowall
 
 LICENSE=	MIT
@@ -17,5 +17,10 @@ USES=		go:1.22,modules
 GO_MODULE=	github.com/Achno/gowall
 
 PLIST_FILES=	bin/gowall
+
+OPTIONS_DEFINE=		PREVIEW
+OPTIONS_DEFAULT=	PREVIEW
+PREVIEW_DESC=		Enable image preview support using chafa
+PREVIEW_RUN_DEPENDS=	chafa:graphics/chafa
 
 .include <bsd.port.mk>

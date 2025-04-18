@@ -46,6 +46,7 @@ bin/mov-cli-dev
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/platform.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/scraper/__init__.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/scraper/the_movie_db.py
+%%PYTHON_SITELIBDIR%%/mov_cli/utils/slugify.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/__init__.py
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/iso_639.json
 %%PYTHON_SITELIBDIR%%/mov_cli/utils/subtitles/lang.py

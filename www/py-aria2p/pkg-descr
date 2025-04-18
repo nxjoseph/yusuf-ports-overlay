@@ -1,0 +1,2 @@
+aria2p is a command-line tool and Python library to
+interact with an aria2c daemon process through JSON-RPC.

@@ -1,5 +1,0 @@
-httpx-sse provides an easy way to consume Server-Sent Event (SSE) messages using
-HTTPX. It features synchronous and asynchronous helpers for connecting to SSE
-endpoints, allowing for efficient event handling and reconnection strategies.
-Ideal for real-time applications, it simplifies the
-integration of SSE into Python web projects.

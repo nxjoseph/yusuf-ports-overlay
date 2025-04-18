@@ -19,6 +19,7 @@ share/locale/de/LC_MESSAGES/video-downloader.mo
 share/locale/el/LC_MESSAGES/video-downloader.mo
 share/locale/es/LC_MESSAGES/video-downloader.mo
 share/locale/et/LC_MESSAGES/video-downloader.mo
+share/locale/eu/LC_MESSAGES/video-downloader.mo
 share/locale/fa/LC_MESSAGES/video-downloader.mo
 share/locale/fi/LC_MESSAGES/video-downloader.mo
 share/locale/fr/LC_MESSAGES/video-downloader.mo
@@ -30,10 +31,12 @@ share/locale/id/LC_MESSAGES/video-downloader.mo
 share/locale/it/LC_MESSAGES/video-downloader.mo
 share/locale/ja/LC_MESSAGES/video-downloader.mo
 share/locale/ko/LC_MESSAGES/video-downloader.mo
+share/locale/ml/LC_MESSAGES/video-downloader.mo
 share/locale/nb_NO/LC_MESSAGES/video-downloader.mo
 share/locale/nl/LC_MESSAGES/video-downloader.mo
 share/locale/pl/LC_MESSAGES/video-downloader.mo
 share/locale/pt/LC_MESSAGES/video-downloader.mo
+share/locale/pt_BR/LC_MESSAGES/video-downloader.mo
 share/locale/ro/LC_MESSAGES/video-downloader.mo
 share/locale/ru/LC_MESSAGES/video-downloader.mo
 share/locale/sk/LC_MESSAGES/video-downloader.mo

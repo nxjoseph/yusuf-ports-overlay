@@ -1,7 +1,0 @@
-dwm-flexipatch is an enhanced version of dwm that offers additional features
-and customization options. While it retains the minimalistic design and
-tiling/floating modes of dwm, it allows users to enable or disable patches at
-compile-time, providing greater flexibility.
-Unlike the standard dwm, which requires editing the config.h file for all
-changes, dwm-flexipatch supports a modular approach, making it easier
-to tailor functionality to individual needs.

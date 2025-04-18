@@ -1,5 +1,0 @@
-py-pixelmatch offers a fast pixel-level image comparison tool, originally
-designed for screenshot testing. It supports both raw image data and PIL.
-Image instances, featuring advanced capabilities like anti-aliased pixel
-detection and perceptual color difference metrics. Ideal for automated
-visual regression testing, it enhances accuracy in image comparisons.

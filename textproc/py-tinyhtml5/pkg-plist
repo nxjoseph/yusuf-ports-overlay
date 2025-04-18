@@ -1,0 +1,6 @@
+%%PYTHON_SITELIBDIR%%/tinyhtml5/__init__.py
+%%PYTHON_SITELIBDIR%%/tinyhtml5/constants.py
+%%PYTHON_SITELIBDIR%%/tinyhtml5/inputstream.py
+%%PYTHON_SITELIBDIR%%/tinyhtml5/parser.py
+%%PYTHON_SITELIBDIR%%/tinyhtml5/tokenizer.py
+%%PYTHON_SITELIBDIR%%/tinyhtml5/treebuilder.py

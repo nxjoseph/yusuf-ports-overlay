@@ -1,0 +1,3 @@
+py-musicbrainzngs is a Python library for accessing the MusicBrainz database.
+It provides an interface to the MusicBrainz NGs web service, allowing users
+to retrieve and submit metadata about music artists, albums, and tracks.

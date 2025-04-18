@@ -1,0 +1,4 @@
+ytmusicapi is a Python library for interfacing with the YouTube Music API.
+It enables users to search for music, manage playlists, and access artist
+information using cookie-based authentication. It provides extensive
+functionality for music exploration and library management.

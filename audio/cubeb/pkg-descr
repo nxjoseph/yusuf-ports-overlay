@@ -1,0 +1,5 @@
+Cubeb is a cross-platform, open-source audio API that provides a simple
+and easy-to-use interface for playing and recording audio. It supports
+multiple audio backends, including PulseAudio, ALSA, JACK, SNDIO and OSS,
+making it a versatile solution for developers who need to work with audio
+across different operating systems and devices.

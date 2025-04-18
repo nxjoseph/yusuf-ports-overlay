@@ -1,4 +1,4 @@
-bin/infinoted-0.7
+bin/infinoted
 include/libinfgtk-0.7/libinfgtk/inf-gtk-account-creation-dialog.h
 include/libinfgtk-0.7/libinfgtk/inf-gtk-acl-sheet-view.h
 include/libinfgtk-0.7/libinfgtk/inf-gtk-browser-model-filter.h
@@ -368,4 +368,4 @@ share/gtk-doc/html/libinftextgtk-0.7/up.png
 share/icons/hicolor/16x16/apps/infinote.png
 share/icons/hicolor/22x22/apps/infinote.png
 share/icons/hicolor/scalable/apps/infinote.svg
-share/man/man1/infinoted-0.7.1.gz
+share/man/man1/infinoted.1.gz

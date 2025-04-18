@@ -1,6 +1,6 @@
 PORTNAME=	YTDownloader
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.18.4
+DISTVERSION=	3.19.0
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/aandrew-me/ytDownloader/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:main \
 		https://raw.githubusercontent.com/aandrew-me/ytDownloader/refs/heads/main/:license
@@ -58,7 +58,7 @@ LIB_DEPENDS=	libatk-1.0.so:accessibility/at-spi2-core \
 RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 		yt-dlp:www/yt-dlp
 
-USES=		electronfix:30 gettext-runtime gl gnome jpeg motif xorg zip
+USES=		electronfix:32 gettext-runtime gl gnome jpeg motif xorg zip
 USE_GL=		egl gbm gl
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 libxslt pango
 USE_XORG=	x11 xcb xcomposite xdamage xext xfixes xi xrandr xrender xtst

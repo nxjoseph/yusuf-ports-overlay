@@ -1,5 +1,5 @@
 PORTNAME=	videomass
-DISTVERSION=	5.0.21
+DISTVERSION=	5.0.25
 CATEGORIES=	www python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyPubSub>=4.0.3:devel/py-PyPubSub@${PY_FLAVO
 		ffmpeg:multimedia/ffmpeg \
 		yt-dlp:www/yt-dlp
 
-USES=		python:3.8+ shebangfix
+USES=		python:3.9+ shebangfix
 USE_PYTHON=	flavors
 
 SHEBANG_FILES=	${WRKSRC}/launcher

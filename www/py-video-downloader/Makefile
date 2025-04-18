@@ -1,6 +1,6 @@
 PORTNAME=	video-downloader
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.12.18
+DISTVERSION=	0.12.22
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,10 +11,10 @@ WWW=		https://github.com/Unrud/video-downloader
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xattr>=0:devel/py-xattr@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yt-dlp>=0:www/py-yt-dlp@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xattr>=0.8.1:devel/py-xattr@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yt-dlp>=2024.12.23:www/py-yt-dlp@${PY_FLAVOR}
 
-USES=		gettext gnome meson python:3.8+
+USES=		gettext-tools gnome meson python:3.8+
 USE_GITHUB=	yes
 GH_ACCOUNT=	Unrud
 USE_GNOME=	gtk-update-icon-cache librsvg2

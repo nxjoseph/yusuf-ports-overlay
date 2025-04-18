@@ -1,3 +1,4 @@
-gowall is a versatile image processing tool designed to convert wallpapers into
-various color schemes and palettes. It supports single and batch conversions,
-custom themes, and color palette extraction.
+Gowall is a versatile tool to convert an image (specifically a wallpaper)
+to any color-scheme and/or pallete you like! It also offers a bunch of
+image processing features like image to pixel art, image upscaling, and
+color palette extraction.

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=%%PORTNAME%%
-Comment=%%COMMENT%%
-Exec=ytdownloader
-Terminal=false
-Icon=%%PREFIX%%/share/pixmaps/%%PORTNAME%%.png
-Type=Application
-StartupNotify=false
-Categories=Network;Utilities;

@@ -1,0 +1,4 @@
+ytmdl downloads a song by getting the audio from Youtube sources using
+youtube-dl and then adds song information like artist name, album name,
+release date, thumbnail etc by fetching it from sources like Itunes,
+Spotify, Gaana and other sources.

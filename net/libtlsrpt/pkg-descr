@@ -1,0 +1,6 @@
+libtlsrpt is a C library for generating TLS reporting files,
+allowing developers to integrate TLS connection problem
+reporting into their applications. It provides an
+implementation of the TLS-RPT protocol, enabling the
+generation of reports on TLS handshake failures,
+certificate validation errors, and other security-related issues.

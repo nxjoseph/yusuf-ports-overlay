@@ -1,0 +1,7 @@
+durationpy library is a Python module that provides functionality to convert
+between Python's datetime.timedelta objects and Go's Duration strings.
+This is useful when you need to interact with systems or data formats that
+use Go's duration format, which is a string-based representation of time
+intervals (e.g., "2h30m15s"). The library allows you to parse Go duration
+strings into Python timedelta objects and format timedelta objects back
+into Go duration strings.

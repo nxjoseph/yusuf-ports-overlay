@@ -1,19 +1,18 @@
 PORTNAME=	dacite
-DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.1
+DISTVERSION=	1.9.2
 CATEGORIES=	textproc python
+MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	nxjoseph@protonmail.com
 COMMENT=	Simple creation of data classes from dictionaries
-WWW=		https://github.com/konradhalas/dacite
+WWW=		https://github.com/konradhalas/dacite \
+		https://pypi.org/project/dacite
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:3.6+
-USE_GITHUB=	yes
-GH_ACCOUNT=	konradhalas
+USES=		python:3.7+
 USE_PYTHON=	autoplist distutils flavors
 
 NO_ARCH=	yes
