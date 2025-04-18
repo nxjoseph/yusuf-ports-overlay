@@ -1,7 +1,7 @@
 #!/bin/csh
 
-set portsf="/usr/ports/ports"
-set portsdir="/usr/ports"
+set portsdir=`pwd`
+set portsf="$portsdir/ports"
 set maintainer="nxjoseph@protonmail.com"
 set pureports="$portsdir/pure-ports"
 
@@ -37,9 +37,9 @@ if ( -d "$portsdir" ) then
 		if ( -f "$pureports" ) then	
 			set portcount=`cat $pureports | wc -l`
 			if ( "$portcount" >= 1 ) then
-				echo "You have $portcount ports at total! Congratz!"
+				echo "This overlay does have $portcount ports at total!" > README.md
 			else
-				echo "Oh no! You don't have any ports :("
+				echo "Oh no! This overlay doesn't have any ports :(" > README.md
 			endif
 			if ( "$status" != 0 ) then
 				echo "You probably don't have permission to create/read $pureports file"
